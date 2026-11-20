@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_4" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#21110B" />
+        <stop offset="25%" stop-color="#382017" />
+        <stop offset="50%" stop-color="#523427" />
+        <stop offset="75%" stop-color="#382017" />
+        <stop offset="100%" stop-color="#21110B" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_4" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#21110B" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#523427" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#21110B" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#523427" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_4" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_4" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_4" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#EAE2D8"/>
+      <rect x="70" y="50" width="460" height="800" fill="#1C100B" stroke="#0E0603" stroke-width="4"/>
+      <rect x="90" y="70" width="420" height="780" fill="url(#woodGrad_door_4)" filter="url(#bevel_door_4)"/>
+      <rect x="90" y="70" width="420" height="780" fill="url(#grain_door_4)"/>
+
+      <!-- Precision 3D Ascending Chevron Cuts -->
+      
+          <!-- Shaded Facets -->
+          <polygon points="120,190 300,140 300,175 120,225" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,190 300,140 300,175 480,225" fill="#543324" opacity="0.9"/>
+          <polyline points="120,190 300,140 480,190" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,265 300,215 300,250 120,300" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,265 300,215 300,250 480,300" fill="#543324" opacity="0.9"/>
+          <polyline points="120,265 300,215 480,265" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,340 300,290 300,325 120,375" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,340 300,290 300,325 480,375" fill="#543324" opacity="0.9"/>
+          <polyline points="120,340 300,290 480,340" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,415 300,365 300,400 120,450" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,415 300,365 300,400 480,450" fill="#543324" opacity="0.9"/>
+          <polyline points="120,415 300,365 480,415" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,490 300,440 300,475 120,525" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,490 300,440 300,475 480,525" fill="#543324" opacity="0.9"/>
+          <polyline points="120,490 300,440 480,490" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,565 300,515 300,550 120,600" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,565 300,515 300,550 480,600" fill="#543324" opacity="0.9"/>
+          <polyline points="120,565 300,515 480,565" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,640 300,590 300,625 120,675" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,640 300,590 300,625 480,675" fill="#543324" opacity="0.9"/>
+          <polyline points="120,640 300,590 480,640" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,715 300,665 300,700 120,750" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,715 300,665 300,700 480,750" fill="#543324" opacity="0.9"/>
+          <polyline points="120,715 300,665 480,715" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+          <!-- Shaded Facets -->
+          <polygon points="120,790 300,740 300,775 120,825" fill="#1D0E08" opacity="0.8"/>
+          <polygon points="480,790 300,740 300,775 480,825" fill="#543324" opacity="0.9"/>
+          <polyline points="120,790 300,740 480,790" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.85"/>
+        
+
+      <!-- Center spine highlight line -->
+      <line x1="300" y1="120" x2="300" y2="800" stroke="#D4AF37" stroke-width="3" opacity="0.9"/>
+
+      <!-- Modern Brass Lock & Handle -->
+      <rect x="445" y="420" width="18" height="120" rx="3" fill="url(#brass_door_4)" filter="url(#bevel_door_4)"/>
+      <circle cx="454" cy="445" r="4" fill="#140905"/>
+      <path d="M 454 460 L 454 515" stroke="#140905" stroke-width="4" stroke-linecap="round"/>
+
+      <rect x="60" y="850" width="480" height="25" fill="#24140D" stroke="#0D0603" stroke-width="2"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-004 GEOMETRIC ELEGANCE • PADAUK / STEAM BEECH</text>
+  </svg>

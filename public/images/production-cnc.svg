@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gantryGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <linearGradient id="spindleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+    <linearGradient id="teakSlab" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B261A"/>
+      <stop offset="50%" stop-color="#5A3D29"/>
+      <stop offset="100%" stop-color="#3B261A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Industrial Machine Cell Environment -->
+  <rect width="800" height="500" fill="#1C1410"/>
+
+  <!-- Heavy Vacuum CNC Machine Bed / Table -->
+  <rect x="60" y="160" width="680" height="280" rx="6" fill="#0F172A" stroke="#334155" stroke-width="4"/>
+  <!-- Vacuum Grid Pods on Table -->
+  <line x1="90" y1="160" x2="90" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="160" y1="160" x2="160" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="230" y1="160" x2="230" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="300" y1="160" x2="300" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="370" y1="160" x2="370" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="440" y1="160" x2="440" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="510" y1="160" x2="510" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="580" y1="160" x2="580" y2="440" stroke="#1E293B" stroke-width="2"/><line x1="650" y1="160" x2="650" y2="440" stroke="#1E293B" stroke-width="2"/>
+  <line x1="60" y1="190" x2="740" y2="190" stroke="#1E293B" stroke-width="2"/><line x1="60" y1="235" x2="740" y2="235" stroke="#1E293B" stroke-width="2"/><line x1="60" y1="280" x2="740" y2="280" stroke="#1E293B" stroke-width="2"/><line x1="60" y1="325" x2="740" y2="325" stroke="#1E293B" stroke-width="2"/><line x1="60" y1="370" x2="740" y2="370" stroke="#1E293B" stroke-width="2"/><line x1="60" y1="415" x2="740" y2="415" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Massive Solid Teak Door Blank Mounted on Machine Bed -->
+  <rect x="130" y="190" width="540" height="220" rx="4" fill="url(#teakSlab)" stroke="#271810" stroke-width="3"/>
+
+  <!-- Active Carved CNC Floral & Arch Door Relief Pattern -->
+  <path d="M 180 300 Q 280 210 380 300 L 380 380 L 180 380 Z" fill="#25160E" stroke="#D4AF37" stroke-width="2.5"/>
+  <circle cx="280" cy="275" r="35" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  <circle cx="280" cy="275" r="10" fill="#D4AF37"/>
+  <!-- Fresh Carved Grooves -->
+  <line x1="210" y1="310" x2="210" y2="375" stroke="#D4AF37" stroke-width="2.5"/>
+  <line x1="280" y1="310" x2="280" y2="375" stroke="#D4AF37" stroke-width="3.5"/>
+  <line x1="350" y1="310" x2="350" y2="375" stroke="#D4AF37" stroke-width="2.5"/>
+
+  <!-- CNC Heavy Bridge Gantry Beam -->
+  <rect x="40" y="60" width="720" height="50" rx="4" fill="url(#gantryGrad)" stroke="#64748B" stroke-width="2"/>
+  <line x1="40" y1="85" x2="760" y2="85" stroke="#94A3B8" stroke-width="3"/>
+
+  <!-- Moving Z-Axis Carriage -->
+  <rect x="360" y="50" width="120" height="130" rx="4" fill="#334155" stroke="#64748B" stroke-width="2"/>
+  <rect x="380" y="90" width="80" height="90" fill="#1E293B"/>
+
+  <!-- High-Speed Water-Cooled CNC Spindle (24,000 RPM) -->
+  <rect x="395" y="110" width="50" height="130" rx="6" fill="url(#spindleGrad)" stroke="#475569" stroke-width="2"/>
+  <!-- Collet Chuck -->
+  <polygon points="410,240 430,240 426,260 414,260" fill="#334155"/>
+  <!-- Solid Carbide 3D Relief Ballnose Router Bit -->
+  <rect x="418" y="260" width="4" height="35" fill="#E2E8F0"/>
+  <!-- High Speed Rotation Glow & Wood Chips Sparkle -->
+  <circle cx="420" cy="295" r="16" fill="none" stroke="#F59E0B" stroke-width="2" stroke-dasharray="4,4" opacity="0.8"/>
+  <circle cx="420" cy="295" r="4" fill="#F59E0B"/>
+  <!-- Wood Shavings Flying -->
+  <circle cx="435" cy="285" r="2.5" fill="#C5A059"/>
+  <circle cx="405" cy="290" r="2" fill="#D4AF37"/>
+  <circle cx="440" cy="305" r="3" fill="#C5A059"/>
+  <circle cx="408" cy="308" r="2" fill="#EAE0D2"/>
+
+  <!-- Dust Extraction Hood & Flexible Duct -->
+  <path d="M 445 160 Q 560 80 600 40" fill="none" stroke="#94A3B8" stroke-width="18" stroke-linecap="round" opacity="0.75"/>
+  <path d="M 445 160 Q 560 80 600 40" fill="none" stroke="#64748B" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- Emergency Stop Button -->
+  <circle cx="90" cy="185" r="12" fill="#DC2626" stroke="#991B1B" stroke-width="2"/>
+  <circle cx="90" cy="185" r="8" fill="#EF4444"/>
+
+  <!-- Digital Status Bar -->
+  <rect x="220" y="455" width="360" height="28" rx="4" fill="#251A16" stroke="#A98255" stroke-width="1.5"/>
+  <text x="400" y="473" font-family="'Inter', sans-serif" font-size="11" fill="#F7F3EC" text-anchor="middle" letter-spacing="2">PHASE 2: MULTI-AXIS CNC WOOD ROUTER CARVING</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <rect width="800" height="500" fill="#1C130D"/>
+  <rect x="50" y="30" width="700" height="440" fill="#241710" stroke="#3A2417" stroke-width="2"/>
+
+  <!-- Teak Door Panel Closeup (Artisan Sanding Relief) -->
+  <rect x="100" y="70" width="600" height="360" rx="4" fill="#4D3322" stroke="#25150C" stroke-width="3"/>
+  <circle cx="400" cy="250" r="120" fill="#382215" stroke="#C5A059" stroke-width="3"/>
+  <circle cx="400" cy="250" r="80" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="400" cy="250" r="30" fill="#C5A059"/>
+
+  <!-- Hand Sanding Tool & Sandpaper Block on Groove -->
+  <rect x="420" y="170" width="70" height="45" rx="4" fill="#D97706" stroke="#92400E" stroke-width="2"/>
+  <rect x="418" y="212" width="74" height="6" rx="1" fill="#FDE68A"/>
+  <!-- Fine Wood Dust Powder Effect -->
+  <circle cx="410" cy="225" r="8" fill="#F7F3EC" opacity="0.3"/>
+  <circle cx="430" cy="230" r="12" fill="#F7F3EC" opacity="0.25"/>
+  <circle cx="460" cy="225" r="10" fill="#F7F3EC" opacity="0.3"/>
+
+  <!-- Title Badge -->
+  <rect x="230" y="455" width="340" height="28" rx="4" fill="#251A16" stroke="#A98255" stroke-width="1.5"/>
+  <text x="400" y="473" font-family="'Inter', sans-serif" font-size="11" fill="#F7F3EC" text-anchor="middle" letter-spacing="2">HAND SANDING & PROFILE REFINEMENT</text>
+</svg>

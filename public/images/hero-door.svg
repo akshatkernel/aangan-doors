@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_hero" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#20150F" />
+        <stop offset="25%" stop-color="#39271F" />
+        <stop offset="50%" stop-color="#573D2F" />
+        <stop offset="75%" stop-color="#39271F" />
+        <stop offset="100%" stop-color="#20150F" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_hero" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#20150F" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#573D2F" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#20150F" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#573D2F" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_hero" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_hero" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_hero" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+  <!-- Dark Walnut Architectural Vignette Background -->
+  <rect width="1200" height="800" fill="#1C130D"/>
+  
+  <!-- Architectural Sandstone Haveli Entrance Portal Structure -->
+  <path d="M 280 800 L 280 320 Q 600 80 920 320 L 920 800 Z" fill="#2E1F18" stroke="#52392B" stroke-width="12"/>
+  <path d="M 320 800 L 320 340 Q 600 110 880 340 L 880 800 Z" fill="#140D09"/>
+
+  <!-- Left Grand Teak Door Leaf -->
+  <rect x="340" y="160" width="250" height="640" fill="url(#woodGrad_hero)"/>
+  <rect x="340" y="160" width="250" height="640" fill="url(#grain_hero)"/>
+  <!-- Right Grand Teak Door Leaf -->
+  <rect x="610" y="160" width="250" height="640" fill="url(#woodGrad_hero)"/>
+  <rect x="610" y="160" width="250" height="640" fill="url(#grain_hero)"/>
+
+  <!-- Center Astragal Seal -->
+  <rect x="592" y="150" width="16" height="650" fill="#140D09" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Intricate CNC Lotus Rosettes on both leaves -->
+  <circle cx="465" cy="380" r="70" fill="#24140D" stroke="#D4AF37" stroke-width="3"/>
+  <circle cx="465" cy="380" r="45" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="465" cy="380" r="16" fill="#D4AF37"/>
+
+  <circle cx="735" cy="380" r="70" fill="#24140D" stroke="#D4AF37" stroke-width="3"/>
+  <circle cx="735" cy="380" r="45" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,4"/>
+  <circle cx="735" cy="380" r="16" fill="#D4AF37"/>
+
+  <!-- Lower Recessed Timber Panels -->
+  <rect x="375" y="520" width="180" height="240" rx="4" fill="#20110A" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="420" y1="540" x2="420" y2="740" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+  <line x1="465" y1="540" x2="465" y2="740" stroke="#D4AF37" stroke-width="3" opacity="0.9"/>
+  <line x1="510" y1="540" x2="510" y2="740" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+
+  <rect x="645" y="520" width="180" height="240" rx="4" fill="#20110A" stroke="#D4AF37" stroke-width="2"/>
+  <line x1="690" y1="540" x2="690" y2="740" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+  <line x1="735" y1="540" x2="735" y2="740" stroke="#D4AF37" stroke-width="3" opacity="0.9"/>
+  <line x1="780" y1="540" x2="780" y2="740" stroke="#D4AF37" stroke-width="2" opacity="0.6"/>
+
+  <!-- Brass Door Knockers & Pulls -->
+  <circle cx="560" cy="460" r="20" fill="none" stroke="url(#brass_hero)" stroke-width="5"/>
+  <circle cx="560" cy="440" r="8" fill="url(#brass_hero)"/>
+
+  <circle cx="640" cy="460" r="20" fill="none" stroke="url(#brass_hero)" stroke-width="5"/>
+  <circle cx="640" cy="440" r="8" fill="url(#brass_hero)"/>
+</svg>

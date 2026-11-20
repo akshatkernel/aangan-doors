@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAE0D2"/>
+      <stop offset="100%" stop-color="#DDD1C1"/>
+    </linearGradient>
+    <linearGradient id="woodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2D1F18"/>
+      <stop offset="20%" stop-color="#3D2B22"/>
+      <stop offset="50%" stop-color="#4F382C"/>
+      <stop offset="80%" stop-color="#3D2B22"/>
+      <stop offset="100%" stop-color="#251A16"/>
+    </linearGradient>
+    <linearGradient id="innerPanel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#33241D"/>
+      <stop offset="100%" stop-color="#241914"/>
+    </linearGradient>
+    <linearGradient id="goldBrass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="50%" stop-color="#A98255"/>
+      <stop offset="100%" stop-color="#805F36"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Wall Background -->
+  <rect width="600" height="900" fill="url(#wallBg)"/>
+  
+  <!-- Architectural Stone Frame / Architrave -->
+  <rect x="70" y="50" width="460" height="800" rx="4" fill="#CBBBA6" stroke="#B8A790" stroke-width="6"/>
+  <rect x="85" y="65" width="430" height="785" fill="#201511"/>
+
+  <!-- Door Outer Frame -->
+  <rect x="100" y="80" width="400" height="770" fill="url(#woodGrad)" stroke="#1A110D" stroke-width="4"/>
+
+  <!-- Inset Decorative Wooden Door Panels -->
+  <!-- Upper Panel with Arch -->
+  <rect x="135" y="120" width="330" height="300" rx="8" fill="url(#innerPanel)" stroke="#A98255" stroke-width="2.5" filter="url(#panelShadow)"/>
+  
+  <!-- CNC Carved Geometric Motif -->
+  <path d="M 300 160 L 370 270 L 230 270 Z" fill="none" stroke="#A98255" stroke-width="3" opacity="0.8"/>
+  <circle cx="300" cy="270" r="50" fill="none" stroke="#A98255" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.9"/>
+  <circle cx="300" cy="270" r="25" fill="#A98255" opacity="0.3"/>
+  <path d="M 200 320 Q 300 370 400 320" fill="none" stroke="#A98255" stroke-width="2" opacity="0.6"/>
+
+  <!-- Middle Rail Divider -->
+  <line x1="120" y1="460" x2="480" y2="460" stroke="#1A110D" stroke-width="8"/>
+  <line x1="120" y1="462" x2="480" y2="462" stroke="#A98255" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Lower Panel -->
+  <rect x="135" y="500" width="330" height="300" rx="4" fill="url(#innerPanel)" stroke="#A98255" stroke-width="2.5" filter="url(#panelShadow)"/>
+  
+  <!-- Lower Carved Vertical Grooves -->
+  <line x1="175" y1="530" x2="175" y2="770" stroke="#1A110D" stroke-width="3"/>
+  <line x1="215" y1="530" x2="215" y2="770" stroke="#1A110D" stroke-width="3"/>
+  <line x1="255" y1="530" x2="255" y2="770" stroke="#1A110D" stroke-width="3"/>
+  <line x1="300" y1="530" x2="300" y2="770" stroke="#A98255" stroke-width="4"/>
+  <line x1="345" y1="530" x2="345" y2="770" stroke="#1A110D" stroke-width="3"/>
+  <line x1="385" y1="530" x2="385" y2="770" stroke="#1A110D" stroke-width="3"/>
+  <line x1="425" y1="530" x2="425" y2="770" stroke="#1A110D" stroke-width="3"/>
+
+  <!-- Brass Door Handle & Lock Plate -->
+  <rect x="445" y="440" width="22" height="110" rx="4" fill="url(#goldBrass)" stroke="#4A3416" stroke-width="1.5" filter="url(#panelShadow)"/>
+  <circle cx="456" cy="465" r="4" fill="#251A16"/>
+  <path d="M 456 480 L 456 525" stroke="#251A16" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Architectural Threshold -->
+  <rect x="60" y="850" width="480" height="25" fill="#3D2B22" stroke="#1A110D" stroke-width="2"/>
+  
+  <!-- AANGAN DOORS Inscribed Badge -->
+  <text x="300" y="878" font-family="'Playfair Display', serif" font-size="12" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • BHOPAL</text>
+</svg>

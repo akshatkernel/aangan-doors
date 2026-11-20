@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_7" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#210E07" />
+        <stop offset="25%" stop-color="#3A1E14" />
+        <stop offset="50%" stop-color="#573022" />
+        <stop offset="75%" stop-color="#3A1E14" />
+        <stop offset="100%" stop-color="#210E07" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_7" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#210E07" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#573022" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#210E07" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#573022" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_7" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_7" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_7" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#EAE1D5"/>
+      <!-- Sandstone Temple Style Arch -->
+      <path d="M 60 850 L 60 320 Q 300 70 540 320 L 540 850 Z" fill="#C4B097" stroke="#A9957D" stroke-width="8"/>
+      <path d="M 75 850 L 75 330 Q 300 90 525 330 L 525 850 Z" fill="#180B05"/>
+
+      <!-- Door Slab -->
+      <path d="M 90 850 L 90 340 Q 300 110 510 340 L 510 850 Z" fill="url(#woodGrad_door_7)" filter="url(#bevel_door_7)"/>
+      <path d="M 90 850 L 90 340 Q 300 110 510 340 L 510 850 Z" fill="url(#grain_door_7)"/>
+
+      <!-- Large Floral Mandala Carving -->
+      <circle cx="300" cy="380" r="110" fill="#200E07" stroke="#D4AF37" stroke-width="3" filter="url(#bevel_door_7)"/>
+      <circle cx="300" cy="380" r="80" fill="none" stroke="#D4AF37" stroke-width="2" stroke-dasharray="6,4"/>
+      <circle cx="300" cy="380" r="50" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+      <circle cx="300" cy="380" r="20" fill="#D4AF37"/>
+
+      <!-- Floral Petals -->
+      
+          <ellipse cx="365" cy="380" rx="16" ry="9" transform="rotate(0, 365, 380)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="360.0521696132336" cy="404.87442310373086" rx="16" ry="9" transform="rotate(22.5, 360.0521696132336, 404.87442310373086)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="345.9619407771256" cy="425.96194077712556" rx="16" ry="9" transform="rotate(45, 345.9619407771256, 425.96194077712556)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="324.87442310373086" cy="440.0521696132336" rx="16" ry="9" transform="rotate(67.5, 324.87442310373086, 440.0521696132336)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="300" cy="445" rx="16" ry="9" transform="rotate(90, 300, 445)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="275.1255768962692" cy="440.0521696132336" rx="16" ry="9" transform="rotate(112.5, 275.1255768962692, 440.0521696132336)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="254.0380592228744" cy="425.9619407771256" rx="16" ry="9" transform="rotate(135, 254.0380592228744, 425.9619407771256)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="239.94783038676636" cy="404.87442310373086" rx="16" ry="9" transform="rotate(157.5, 239.94783038676636, 404.87442310373086)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="235" cy="380" rx="16" ry="9" transform="rotate(180, 235, 380)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="239.94783038676636" cy="355.1255768962692" rx="16" ry="9" transform="rotate(202.5, 239.94783038676636, 355.1255768962692)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="254.0380592228744" cy="334.03805922287444" rx="16" ry="9" transform="rotate(225, 254.0380592228744, 334.03805922287444)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="275.1255768962692" cy="319.9478303867663" rx="16" ry="9" transform="rotate(247.5, 275.1255768962692, 319.9478303867663)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="300" cy="315" rx="16" ry="9" transform="rotate(270, 300, 315)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="324.87442310373086" cy="319.9478303867664" rx="16" ry="9" transform="rotate(292.5, 324.87442310373086, 319.9478303867664)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="345.96194077712556" cy="334.0380592228744" rx="16" ry="9" transform="rotate(315, 345.96194077712556, 334.0380592228744)" fill="#D4AF37" opacity="0.8"/>
+        
+          <ellipse cx="360.0521696132337" cy="355.1255768962692" rx="16" ry="9" transform="rotate(337.5, 360.0521696132337, 355.1255768962692)" fill="#D4AF37" opacity="0.8"/>
+        
+
+      <!-- Bottom Traditional Haveli Carved Arch Panels -->
+      <rect x="130" y="530" width="155" height="290" rx="6" fill="#200E07" stroke="#D4AF37" stroke-width="2.5" filter="url(#bevel_door_7)"/>
+      <path d="M 145 610 Q 207 550 270 610 L 270 800 L 145 800 Z" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="207" cy="670" r="28" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="207" cy="670" r="8" fill="#D4AF37"/>
+
+      <rect x="315" y="530" width="155" height="290" rx="6" fill="#200E07" stroke="#D4AF37" stroke-width="2.5" filter="url(#bevel_door_7)"/>
+      <path d="M 330 610 Q 392 550 455 610 L 455 800 L 330 800 Z" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="392" cy="670" r="28" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="392" cy="670" r="8" fill="#D4AF37"/>
+
+      <!-- Traditional Brass Lion Knocker / Ring -->
+      <circle cx="445" cy="485" r="18" fill="none" stroke="url(#brass_door_7)" stroke-width="4.5" filter="url(#bevel_door_7)"/>
+      <circle cx="445" cy="470" r="7" fill="url(#brass_door_7)"/>
+
+      <rect x="50" y="850" width="500" height="25" fill="#26140B" stroke="#120803" stroke-width="2"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-007 FLORAL CRAFT • SOLID INDIAN ROSEWOOD / TEAK</text>
+  </svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_12" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#201009" />
+        <stop offset="25%" stop-color="#382015" />
+        <stop offset="50%" stop-color="#543323" />
+        <stop offset="75%" stop-color="#382015" />
+        <stop offset="100%" stop-color="#201009" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_12" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#201009" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#543323" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#201009" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#543323" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_12" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_12" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_12" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#E8E0D4"/>
+      <rect x="65" y="45" width="470" height="810" fill="#331D13" stroke="#1C0E07" stroke-width="6"/>
+      <rect x="85" y="65" width="430" height="785" fill="url(#woodGrad_door_12)" filter="url(#bevel_door_12)"/>
+      <rect x="85" y="65" width="430" height="785" fill="url(#grain_door_12)"/>
+
+      <!-- Stepped Multi-Level Indian Haveli Borders -->
+      <rect x="120" y="100" width="360" height="715" rx="4" fill="none" stroke="#D4AF37" stroke-width="3"/>
+      <rect x="135" y="115" width="330" height="685" rx="2" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+      <!-- Upper Center Haveli Rosette & Paisley Inlay -->
+      <rect x="150" y="135" width="300" height="300" rx="4" fill="#24130A" stroke="#D4AF37" stroke-width="2.5" filter="url(#bevel_door_12)"/>
+      <circle cx="300" cy="285" r="65" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+      <polygon points="300,240 340,310 260,310" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <polygon points="300,330 340,260 260,260" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="300" cy="285" r="12" fill="#D4AF37"/>
+
+      <!-- Lower Symmetrical Carved Panels -->
+      <rect x="150" y="465" width="300" height="325" rx="4" fill="#24130A" stroke="#D4AF37" stroke-width="2.5" filter="url(#bevel_door_12)"/>
+      <circle cx="300" cy="627" r="65" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+      <polygon points="300,582 340,652 260,652" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <polygon points="300,672 340,602 260,602" fill="none" stroke="#D4AF37" stroke-width="2"/>
+      <circle cx="300" cy="627" r="12" fill="#D4AF37"/>
+
+      <!-- Brass Hardware -->
+      <circle cx="440" cy="450" r="17" fill="none" stroke="url(#brass_door_12)" stroke-width="4.5" filter="url(#bevel_door_12)"/>
+      <circle cx="440" cy="435" r="7" fill="url(#brass_door_12)"/>
+
+      <rect x="50" y="850" width="500" height="25" fill="#26150D" stroke="#100703" stroke-width="2"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-012 ORNATE TRADITION • GRADE-A INDIAN TEAK WOOD</text>
+  </svg>

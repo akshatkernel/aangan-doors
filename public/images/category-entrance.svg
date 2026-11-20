@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_cat_ent" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#22150D" />
+        <stop offset="25%" stop-color="#3A2417" />
+        <stop offset="50%" stop-color="#543825" />
+        <stop offset="75%" stop-color="#3A2417" />
+        <stop offset="100%" stop-color="#22150D" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_cat_ent" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#22150D" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#543825" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#22150D" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#543825" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_cat_ent" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_cat_ent" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_cat_ent" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+  <rect width="600" height="800" fill="#EAE0D2"/>
+  <path d="M 80 800 L 80 280 Q 300 60 520 280 L 520 800 Z" fill="#CBBBA6" stroke="#B3A28B" stroke-width="10"/>
+  <path d="M 98 800 L 98 290 Q 300 85 502 290 L 502 800 Z" fill="url(#woodGrad_cat_ent)"/>
+  <path d="M 98 800 L 98 290 Q 300 85 502 290 L 502 800 Z" fill="url(#grain_cat_ent)"/>
+  <circle cx="300" cy="300" r="60" fill="none" stroke="#D4AF37" stroke-width="3"/>
+  <circle cx="300" cy="300" r="16" fill="#D4AF37"/>
+  <rect x="140" y="450" width="140" height="280" rx="4" fill="#201108" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="320" y="450" width="140" height="280" rx="4" fill="#201108" stroke="#D4AF37" stroke-width="2"/>
+  <rect x="440" y="420" width="18" height="110" rx="3" fill="url(#brass_cat_ent)"/>
+</svg>

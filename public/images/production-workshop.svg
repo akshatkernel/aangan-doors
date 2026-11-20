@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="benchWood" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A3425"/>
+      <stop offset="50%" stop-color="#6E4F39"/>
+      <stop offset="100%" stop-color="#4A3425"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="#201510"/>
+  <!-- Workshop Wall with Hanging Woodworking Tools -->
+  <rect x="40" y="30" width="720" height="440" fill="#18100C" stroke="#332219" stroke-width="2"/>
+  
+  <!-- Tool Pegboard -->
+  <rect x="60" y="50" width="680" height="120" fill="#261A14" stroke="#3D291F" stroke-width="1"/>
+  <!-- Saws, Hand Planes, Framing Squares -->
+  <path d="M 120 70 L 160 140 L 140 145 Z" fill="#94A3B8"/>
+  <rect x="220" y="80" width="80" height="35" rx="3" fill="#6B4B35"/>
+  <polygon points="380,65 380,145 440,145 440,135 390,135 390,65" fill="#CBD5E1"/>
+
+  <!-- Heavy Joinery Workbench -->
+  <rect x="70" y="240" width="660" height="210" fill="url(#benchWood)" stroke="#301F15" stroke-width="4"/>
+
+  <!-- Door Timber Stiles & Rails in Assembly (Clamps Attached) -->
+  <rect x="130" y="260" width="540" height="160" rx="3" fill="#3D2719" stroke="#A98255" stroke-width="2"/>
+  <!-- Door Panels Inset -->
+  <rect x="170" y="280" width="130" height="120" rx="2" fill="#29180E" stroke="#A98255" stroke-width="1.5"/>
+  <rect x="335" y="280" width="130" height="120" rx="2" fill="#29180E" stroke="#A98255" stroke-width="1.5"/>
+  <rect x="500" y="280" width="130" height="120" rx="2" fill="#29180E" stroke="#A98255" stroke-width="1.5"/>
+
+  <!-- Steel Sash Clamps -->
+  <rect x="110" y="300" width="580" height="10" fill="#475569" stroke="#1E293B" stroke-width="1"/>
+  <rect x="110" y="370" width="580" height="10" fill="#475569" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Title Badge -->
+  <rect x="230" y="455" width="340" height="28" rx="4" fill="#251A16" stroke="#A98255" stroke-width="1.5"/>
+  <text x="400" y="473" font-family="'Inter', sans-serif" font-size="11" fill="#F7F3EC" text-anchor="middle" letter-spacing="2">WORKSHOP TIMBER ASSEMBLY & JOINERY</text>
+</svg>

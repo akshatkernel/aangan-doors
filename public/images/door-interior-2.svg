@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_8" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#4B3523" />
+        <stop offset="25%" stop-color="#6E523B" />
+        <stop offset="50%" stop-color="#8D6B4F" />
+        <stop offset="75%" stop-color="#6E523B" />
+        <stop offset="100%" stop-color="#4B3523" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_8" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#4B3523" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#8D6B4F" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#4B3523" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#8D6B4F" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_8" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_8" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_8" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#F5F2EC"/>
+      <rect x="80" y="60" width="440" height="800" fill="#E8DFD5" stroke="#D3C7B8" stroke-width="3"/>
+      <rect x="95" y="75" width="410" height="785" fill="#2B1E15"/>
+
+      <!-- Flush Solid Oak Slab -->
+      <rect x="105" y="85" width="390" height="775" fill="url(#woodGrad_door_8)" filter="url(#bevel_door_8)"/>
+      <rect x="105" y="85" width="390" height="775" fill="url(#grain_door_8)"/>
+
+      <!-- Architectural Asymmetric Vertical Slat Channel -->
+      <rect x="180" y="85" width="8" height="775" fill="#301F14" opacity="0.9"/>
+      <line x1="184" y1="85" x2="184" y2="860" stroke="#C5A059" stroke-width="1.5" opacity="0.6"/>
+
+      <!-- Minimal Matte Black / Brushed Brass Handle -->
+      <circle cx="440" cy="460" r="14" fill="#201A16"/>
+      <rect x="420" y="455" width="60" height="10" rx="3" fill="url(#brass_door_8)" filter="url(#bevel_door_8)"/>
+
+      <rect x="70" y="860" width="460" height="20" fill="#443021" stroke="#22160D" stroke-width="1.5"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-008 MINIMAL OAK • AMERICAN WHITE OAK</text>
+  </svg>

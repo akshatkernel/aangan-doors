@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_cat_cnc" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#24140C" />
+        <stop offset="25%" stop-color="#40291D" />
+        <stop offset="50%" stop-color="#5D3E2D" />
+        <stop offset="75%" stop-color="#40291D" />
+        <stop offset="100%" stop-color="#24140C" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_cat_cnc" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#24140C" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#5D3E2D" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#24140C" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#5D3E2D" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_cat_cnc" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_cat_cnc" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_cat_cnc" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+  <rect width="600" height="800" fill="#E8DFD5"/>
+  <rect x="70" y="60" width="460" height="700" rx="6" fill="url(#woodGrad_cat_cnc)"/>
+  <rect x="70" y="60" width="460" height="700" rx="6" fill="url(#grain_cat_cnc)"/>
+  <circle cx="300" cy="410" r="150" fill="none" stroke="#C5A059" stroke-width="4"/>
+  <circle cx="300" cy="410" r="100" fill="#22130A" stroke="#C5A059" stroke-width="3"/>
+  <circle cx="300" cy="410" r="30" fill="#C5A059"/>
+  <line x1="400" y1="410" x2="450" y2="410" stroke="#C5A059" stroke-width="3"/><line x1="392.3879532511287" y1="448.268343236509" x2="438.58192987669304" y2="467.40251485476347" stroke="#C5A059" stroke-width="3"/><line x1="370.71067811865476" y1="480.71067811865476" x2="406.06601717798213" y2="516.0660171779821" stroke="#C5A059" stroke-width="3"/><line x1="338.268343236509" y1="502.3879532511287" x2="357.40251485476347" y2="548.581929876693" stroke="#C5A059" stroke-width="3"/><line x1="300" y1="510" x2="300" y2="560" stroke="#C5A059" stroke-width="3"/><line x1="261.731656763491" y1="502.3879532511287" x2="242.59748514523653" y2="548.581929876693" stroke="#C5A059" stroke-width="3"/><line x1="229.28932188134524" y1="480.71067811865476" x2="193.93398282201787" y2="516.0660171779821" stroke="#C5A059" stroke-width="3"/><line x1="207.6120467488713" y1="448.268343236509" x2="161.418070123307" y2="467.40251485476347" stroke="#C5A059" stroke-width="3"/><line x1="200" y1="410" x2="150" y2="410" stroke="#C5A059" stroke-width="3"/><line x1="207.6120467488713" y1="371.73165676349106" x2="161.41807012330696" y2="352.59748514523653" stroke="#C5A059" stroke-width="3"/><line x1="229.28932188134524" y1="339.28932188134524" x2="193.93398282201787" y2="303.93398282201787" stroke="#C5A059" stroke-width="3"/><line x1="261.73165676349095" y1="317.61204674887136" x2="242.59748514523645" y2="271.418070123307" stroke="#C5A059" stroke-width="3"/><line x1="300" y1="310" x2="300" y2="260" stroke="#C5A059" stroke-width="3"/><line x1="338.268343236509" y1="317.6120467488713" x2="357.4025148547635" y2="271.418070123307" stroke="#C5A059" stroke-width="3"/><line x1="370.71067811865476" y1="339.28932188134524" x2="406.0660171779821" y2="303.93398282201787" stroke="#C5A059" stroke-width="3"/><line x1="392.38795325112864" y1="371.73165676349095" x2="438.581929876693" y2="352.5974851452364" stroke="#C5A059" stroke-width="3"/>
+</svg>

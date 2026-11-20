@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_15" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#352417" />
+        <stop offset="25%" stop-color="#523A27" />
+        <stop offset="50%" stop-color="#735339" />
+        <stop offset="75%" stop-color="#523A27" />
+        <stop offset="100%" stop-color="#352417" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_15" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#352417" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#735339" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#352417" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#735339" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_15" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_15" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_15" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#F4EFEA"/>
+      <rect x="80" y="60" width="440" height="800" fill="#E0D2C2" stroke="#C4B4A2" stroke-width="3"/>
+      <rect x="95" y="75" width="410" height="785" fill="#20150D"/>
+
+      <rect x="105" y="85" width="390" height="775" fill="url(#woodGrad_door_15)" filter="url(#bevel_door_15)"/>
+      <rect x="105" y="85" width="390" height="775" fill="url(#grain_door_15)"/>
+
+      <!-- 6-Panel Configuration -->
+      <!-- Row 1 (Top) -->
+      <rect x="135" y="115" width="150" height="190" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="150" y="130" width="120" height="160" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <rect x="315" y="115" width="150" height="190" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="330" y="130" width="120" height="160" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <!-- Row 2 (Middle - Tall) -->
+      <rect x="135" y="335" width="150" height="240" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="150" y="350" width="120" height="210" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <rect x="315" y="335" width="150" height="240" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="330" y="350" width="120" height="210" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <!-- Row 3 (Bottom) -->
+      <rect x="135" y="605" width="150" height="210" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="150" y="620" width="120" height="180" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <rect x="315" y="605" width="150" height="210" rx="3" fill="#302014" stroke="#B89255" stroke-width="2" filter="url(#bevel_door_15)"/>
+      <rect x="330" y="620" width="120" height="180" rx="2" fill="url(#woodGrad_door_15)"/>
+
+      <!-- Brushed Brass Lever Handle -->
+      <circle cx="445" cy="455" r="15" fill="url(#brass_door_15)" filter="url(#bevel_door_15)"/>
+      <rect x="425" y="450" width="55" height="10" rx="3" fill="url(#brass_door_15)" filter="url(#bevel_door_15)"/>
+
+      <rect x="70" y="860" width="460" height="20" fill="#352418" stroke="#160E08" stroke-width="1.5"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-015 CLASSIC TEAK PANEL • SELECT GRADE TEAK WOOD</text>
+  </svg>

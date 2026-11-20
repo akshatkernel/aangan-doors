@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="deskGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A281E" />
+      <stop offset="100%" stop-color="#261A13" />
+    </linearGradient>
+  </defs>
+
+  <!-- Workshop Studio Background -->
+  <rect width="800" height="500" fill="#251A16"/>
+
+  <!-- Workshop Technical Blueprint Wall -->
+  <rect x="40" y="30" width="720" height="440" rx="6" fill="#1C1410" stroke="#39271F" stroke-width="3"/>
+
+  <!-- Solid Oak/Teak Workshop Desk -->
+  <rect x="40" y="380" width="720" height="90" fill="url(#deskGrad)" stroke="#A98255" stroke-width="1.5"/>
+
+  <!-- Main CAD/CAM Display Monitor -->
+  <rect x="120" y="60" width="560" height="300" rx="8" fill="url(#screenGrad)" stroke="#475569" stroke-width="4"/>
+  <!-- Monitor Stand -->
+  <rect x="375" y="360" width="50" height="25" fill="#334155"/>
+  <rect x="330" y="382" width="140" height="8" rx="2" fill="#1E293B"/>
+
+  <!-- CAD Vector Software Grid Interface -->
+  <line x1="140" y1="80" x2="140" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="176" y1="80" x2="176" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="212" y1="80" x2="212" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="248" y1="80" x2="248" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="284" y1="80" x2="284" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="320" y1="80" x2="320" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="356" y1="80" x2="356" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="392" y1="80" x2="392" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="428" y1="80" x2="428" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="464" y1="80" x2="464" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="500" y1="80" x2="500" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="536" y1="80" x2="536" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="572" y1="80" x2="572" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="608" y1="80" x2="608" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="644" y1="80" x2="644" y2="340" stroke="#334155" stroke-width="0.8" opacity="0.4"/>
+  <line x1="140" y1="90" x2="660" y2="90" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="126" x2="660" y2="126" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="162" x2="660" y2="162" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="198" x2="660" y2="198" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="234" x2="660" y2="234" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="270" x2="660" y2="270" stroke="#334155" stroke-width="0.8" opacity="0.4"/><line x1="140" y1="306" x2="660" y2="306" stroke="#334155" stroke-width="0.8" opacity="0.4"/>
+
+  <!-- CAD Door Technical Wireframe Elevation (Indian Arch & CNC jaali) -->
+  <rect x="310" y="90" width="180" height="240" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+  <path d="M 330 200 Q 400 110 470 200 L 470 310 L 330 310 Z" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <circle cx="400" cy="180" r="30" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="310" y1="210" x2="490" y2="210" stroke="#38BDF8" stroke-width="1.5"/>
+  <circle cx="475" cy="225" r="3" fill="#F59E0B"/>
+
+  <!-- CNC Toolpath Vectors (Cyan / Magenta G-Code Paths) -->
+  <path d="M 345 230 L 455 230 L 455 300 L 345 300 Z" fill="none" stroke="#EC4899" stroke-width="1.5" stroke-dasharray="3,2"/>
+  <line x1="375" y1="230" x2="375" y2="300" stroke="#EC4899" stroke-width="1"/>
+  <line x1="425" y1="230" x2="425" y2="300" stroke="#EC4899" stroke-width="1"/>
+
+  <!-- Coordinate Display & CNC Status in CAD Viewport -->
+  <rect x="135" y="75" width="130" height="100" rx="3" fill="#0F172A" opacity="0.9"/>
+  <text x="145" y="95" font-family="monospace" font-size="10" fill="#38BDF8">CAD/CAM v4.8</text>
+  <text x="145" y="112" font-family="monospace" font-size="9" fill="#94A3B8">X: 84.000 in</text>
+  <text x="145" y="127" font-family="monospace" font-size="9" fill="#94A3B8">Y: 36.000 in</text>
+  <text x="145" y="142" font-family="monospace" font-size="9" fill="#94A3B8">Z: -0.750 in (Cut)</text>
+  <text x="145" y="160" font-family="monospace" font-size="9" fill="#10B981">TOOLPATH: READY</text>
+
+  <!-- Indian Workshop Desk Items: Teak Timber Block & Steel Ruler -->
+  <rect x="80" y="400" width="140" height="35" rx="3" fill="#523826" stroke="#2D1D13" stroke-width="2"/>
+  <text x="150" y="422" font-family="'Inter', sans-serif" font-size="9" fill="#EAE0D2" text-anchor="middle" letter-spacing="1">TEAK TIMBER SAMPLE</text>
+
+  <rect x="580" y="415" width="140" height="12" fill="#94A3B8" stroke="#475569" stroke-width="1"/>
+  <line x1="590" y1="415" x2="590" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="599" y1="415" x2="599" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="608" y1="415" x2="608" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="617" y1="415" x2="617" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="626" y1="415" x2="626" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="635" y1="415" x2="635" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="644" y1="415" x2="644" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="653" y1="415" x2="653" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="662" y1="415" x2="662" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="671" y1="415" x2="671" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="680" y1="415" x2="680" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="689" y1="415" x2="689" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="698" y1="415" x2="698" y2="421" stroke="#334155" stroke-width="0.8"/><line x1="707" y1="415" x2="707" y2="421" stroke="#334155" stroke-width="0.8"/>
+
+  <!-- Title Badge -->
+  <rect x="230" y="450" width="340" height="28" rx="4" fill="#251A16" stroke="#A98255" stroke-width="1.5"/>
+  <text x="400" y="468" font-family="'Inter', sans-serif" font-size="11" fill="#F7F3EC" text-anchor="middle" letter-spacing="2">PHASE 1: DIGITAL CAD/CAM TOOLPATH ENGINEERING</text>
+</svg>

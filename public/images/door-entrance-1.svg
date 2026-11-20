@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#22150D" />
+        <stop offset="25%" stop-color="#3A2417" />
+        <stop offset="50%" stop-color="#543825" />
+        <stop offset="75%" stop-color="#3A2417" />
+        <stop offset="100%" stop-color="#22150D" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_1" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#22150D" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#543825" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#22150D" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#543825" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_1" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_1" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_1" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <!-- Sandstone Outer Arch Wall -->
+      <rect width="600" height="900" fill="#EAE0D2"/>
+      <path d="M 60 850 L 60 300 Q 300 60 540 300 L 540 850 Z" fill="#CBBBA6" stroke="#B3A28B" stroke-width="12"/>
+      <path d="M 78 850 L 78 310 Q 300 85 522 310 L 522 850 Z" fill="#1C120C"/>
+
+      <!-- Door Slab -->
+      <path d="M 90 850 L 90 320 Q 300 100 510 320 L 510 850 Z" fill="url(#woodGrad_door_1)" filter="url(#bevel_door_1)"/>
+      <path d="M 90 850 L 90 320 Q 300 100 510 320 L 510 850 Z" fill="url(#grain_door_1)"/>
+
+      <!-- Top Arched Carved Panel -->
+      <path d="M 130 350 Q 300 160 470 350 L 470 460 L 130 460 Z" fill="#25150C" stroke="#C5A059" stroke-width="3" filter="url(#bevel_door_1)"/>
+      <!-- Classical Lotus Medallion Carving -->
+      <circle cx="300" cy="330" r="55" fill="none" stroke="#C5A059" stroke-width="3"/>
+      <circle cx="300" cy="330" r="35" fill="none" stroke="#C5A059" stroke-width="1.8" stroke-dasharray="6,4"/>
+      <circle cx="300" cy="330" r="14" fill="#C5A059"/>
+      <!-- Radial Petals -->
+      
+        <line x1="300" y1="330" x2="348" y2="330" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="341.56921938165306" y2="354" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="324" y2="371.56921938165306" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="300" y2="378" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="276" y2="371.56921938165306" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="258.43078061834694" y2="354" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="252" y2="330" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="258.43078061834694" y2="306" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="276" y2="288.43078061834694" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="300" y2="282" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="324" y2="288.43078061834694" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+        <line x1="300" y1="330" x2="341.56921938165306" y2="306" stroke="#C5A059" stroke-width="1.5" opacity="0.8"/>
+      
+
+      <!-- Center Cross Rail -->
+      <rect x="100" y="480" width="400" height="20" fill="#23140A" stroke="#C5A059" stroke-width="1.5"/>
+
+      <!-- Bottom Recessed Panels -->
+      <rect x="130" y="520" width="155" height="300" rx="4" fill="#201108" stroke="#C5A059" stroke-width="2.5" filter="url(#bevel_door_1)"/>
+      <line x1="165" y1="540" x2="165" y2="800" stroke="#C5A059" stroke-width="2" opacity="0.4"/>
+      <line x1="205" y1="540" x2="205" y2="800" stroke="#C5A059" stroke-width="3" opacity="0.7"/>
+      <line x1="250" y1="540" x2="250" y2="800" stroke="#C5A059" stroke-width="2" opacity="0.4"/>
+
+      <rect x="315" y="520" width="155" height="300" rx="4" fill="#201108" stroke="#C5A059" stroke-width="2.5" filter="url(#bevel_door_1)"/>
+      <line x1="350" y1="540" x2="350" y2="800" stroke="#C5A059" stroke-width="2" opacity="0.4"/>
+      <line x1="395" y1="540" x2="395" y2="800" stroke="#C5A059" stroke-width="3" opacity="0.7"/>
+      <line x1="435" y1="540" x2="435" y2="800" stroke="#C5A059" stroke-width="2" opacity="0.4"/>
+
+      <!-- Heavy Brass Handle Plate & Lever -->
+      <rect x="450" y="470" width="22" height="110" rx="4" fill="url(#brass_door_1)" stroke="#664614" stroke-width="1.5" filter="url(#bevel_door_1)"/>
+      <circle cx="461" cy="495" r="4.5" fill="#1C120C"/>
+      <path d="M 461 510 L 461 555" stroke="#1C120C" stroke-width="4.5" stroke-linecap="round"/>
+
+      <!-- Threshold -->
+      <rect x="50" y="850" width="500" height="30" fill="#2E1C13" stroke="#150B06" stroke-width="2"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-001 ROYAL HERITAGE • SEASONED TEAK WOOD</text>
+  </svg>

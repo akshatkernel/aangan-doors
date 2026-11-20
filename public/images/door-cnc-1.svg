@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900" width="100%" height="100%">
+    
+    <defs>
+      <!-- Wood Grain Gradient -->
+      <linearGradient id="woodGrad_door_3" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#24140C" />
+        <stop offset="25%" stop-color="#40291D" />
+        <stop offset="50%" stop-color="#5D3E2D" />
+        <stop offset="75%" stop-color="#40291D" />
+        <stop offset="100%" stop-color="#24140C" />
+      </linearGradient>
+
+      <!-- Vertical Grain Texture Pattern -->
+      <pattern id="grain_door_3" width="40" height="200" patternUnits="userSpaceOnUse">
+        <line x1="8" y1="0" x2="8" y2="200" stroke="#24140C" stroke-width="0.8" opacity="0.35"/>
+        <line x1="16" y1="0" x2="16" y2="200" stroke="#5D3E2D" stroke-width="0.6" opacity="0.4"/>
+        <line x1="25" y1="0" x2="25" y2="200" stroke="#24140C" stroke-width="1.2" opacity="0.3"/>
+        <line x1="33" y1="0" x2="33" y2="200" stroke="#5D3E2D" stroke-width="0.5" opacity="0.3"/>
+      </pattern>
+
+      <!-- 3D Bevel Shadow Filter -->
+      <filter id="bevel_door_3" x="-10%" y="-10%" width="120%" height="120%">
+        <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#050302" flood-opacity="0.55"/>
+      </filter>
+
+      <!-- Recessed Panel Shadow -->
+      <filter id="inset_door_3" x="-5%" y="-5%" width="110%" height="110%">
+        <feOffset dx="2" dy="3"/>
+        <feGaussianBlur stdDeviation="3" result="offset-blur"/>
+        <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"/>
+        <feFlood flood-color="#000000" flood-opacity="0.6" result="color"/>
+        <feComposite operator="in" in="color" in2="inverse" result="shadow"/>
+        <feComposite operator="over" in="shadow" in2="SourceGraphic"/>
+      </filter>
+
+      <!-- Brass Hardware Metallic Gradient -->
+      <linearGradient id="brass_door_3" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#EED58E" />
+        <stop offset="40%" stop-color="#C5A059" />
+        <stop offset="70%" stop-color="#8F6B2E" />
+        <stop offset="100%" stop-color="#D4AF37" />
+      </linearGradient>
+    </defs>
+  
+    
+      <rect width="600" height="900" fill="#E8DFD5"/>
+      <rect x="70" y="50" width="460" height="800" fill="#21150F" stroke="#120A06" stroke-width="5"/>
+      <rect x="90" y="70" width="420" height="780" fill="url(#woodGrad_door_3)" filter="url(#bevel_door_3)"/>
+      <rect x="90" y="70" width="420" height="780" fill="url(#grain_door_3)"/>
+
+      <!-- Large Center CNC Carved Medallion Panel -->
+      <rect x="120" y="110" width="360" height="700" rx="6" fill="#25160E" stroke="#C5A059" stroke-width="2.5" filter="url(#bevel_door_3)"/>
+
+      <!-- Multi-tier Rosette & CNC Depth Layers -->
+      <circle cx="300" cy="460" r="140" fill="none" stroke="#C5A059" stroke-width="3.5"/>
+      <circle cx="300" cy="460" r="115" fill="none" stroke="#C5A059" stroke-width="2" stroke-dasharray="8,6"/>
+      <circle cx="300" cy="460" r="90" fill="#1C100A" stroke="#C5A059" stroke-width="3"/>
+      <circle cx="300" cy="460" r="60" fill="none" stroke="#C5A059" stroke-width="2.5"/>
+      <circle cx="300" cy="460" r="30" fill="#C5A059" opacity="0.9"/>
+      <circle cx="300" cy="460" r="10" fill="#1C100A"/>
+
+      <!-- Radiating CNC Chamfer Grooves -->
+      
+          <line x1="390" y1="460" x2="438" y2="460" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="386.93332436601617" y1="483.2937140592269" x2="433.2977640278914" y2="495.71702822414784" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="377.9422863405995" y1="505" x2="419.51150572225254" y2="529" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="363.6396103067893" y1="523.6396103067892" x2="397.58073580374355" y2="557.5807358037436" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="345" y1="537.9422863405995" x2="369" y2="579.5115057222525" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="323.2937140592269" y1="546.9333243660161" x2="335.71702822414784" y2="593.2977640278914" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="300" y1="550" x2="300" y2="598" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="276.7062859407731" y1="546.9333243660161" x2="264.2829717758521" y2="593.2977640278914" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="255.00000000000003" y1="537.9422863405995" x2="231.00000000000003" y2="579.5115057222525" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="236.36038969321072" y1="523.6396103067893" x2="202.41926419625645" y2="557.5807358037436" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="222.05771365940052" y1="505" x2="180.48849427774746" y2="529" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="213.06667563398386" y1="483.2937140592269" x2="166.70223597210858" y2="495.7170282241479" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="210" y1="460" x2="162" y2="460" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="213.06667563398383" y1="436.70628594077317" x2="166.70223597210855" y2="424.28297177585216" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="222.05771365940052" y1="415" x2="180.48849427774746" y2="391" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="236.36038969321072" y1="396.3603896932107" x2="202.41926419625642" y2="362.41926419625645" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="254.99999999999994" y1="382.0577136594005" x2="230.99999999999994" y2="340.48849427774746" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="276.7062859407731" y1="373.06667563398383" x2="264.28297177585216" y2="326.7022359721086" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="300" y1="370" x2="300" y2="322" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="323.2937140592269" y1="373.0666756339839" x2="335.7170282241479" y2="326.7022359721086" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="345" y1="382.0577136594005" x2="369" y2="340.48849427774746" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="363.6396103067893" y1="396.3603896932107" x2="397.58073580374355" y2="362.41926419625645" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="377.9422863405995" y1="414.99999999999994" x2="419.5115057222525" y2="390.99999999999994" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+          <line x1="386.93332436601617" y1="436.7062859407731" x2="433.2977640278914" y2="424.28297177585216" stroke="#C5A059" stroke-width="2.5" opacity="0.85"/>
+        
+
+      <!-- Corner CNC Spandrel Filigree -->
+      <path d="M 135 125 L 185 125 Q 135 175 135 225 Z" fill="#C5A059" opacity="0.3"/>
+      <path d="M 465 125 L 415 125 Q 465 175 465 225 Z" fill="#C5A059" opacity="0.3"/>
+      <path d="M 135 795 L 185 795 Q 135 745 135 695 Z" fill="#C5A059" opacity="0.3"/>
+      <path d="M 465 795 L 415 795 Q 465 745 465 695 Z" fill="#C5A059" opacity="0.3"/>
+
+      <!-- Brass Hardware -->
+      <rect x="440" y="430" width="20" height="110" rx="3" fill="url(#brass_door_3)" filter="url(#bevel_door_3)"/>
+      <circle cx="450" cy="455" r="4" fill="#1A110D"/>
+      <path d="M 450 470 L 450 515" stroke="#1A110D" stroke-width="4" stroke-linecap="round"/>
+
+      <rect x="60" y="850" width="480" height="25" fill="#241710" stroke="#100804" stroke-width="2"/>
+    
+    <!-- Editorial Architectural Tag -->
+    <text x="300" y="878" font-family="'Playfair Display', Georgia, serif" font-size="11" fill="#77716A" text-anchor="middle" letter-spacing="3">AANGAN DOORS • AD-003 IMPERIAL CARVE • ENGINEERED HARDWOOD / TEAK</text>
+  </svg>
